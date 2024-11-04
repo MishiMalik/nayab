@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruise Itinerary</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<div class="main-containerr">
+    <!-- Cruise Itinerary Section -->
+    <div class="cruise-itinerary">
+        <h2>Cruise Itinerary</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Days</th>
+                    <th>Ports of Call</th>
+                    <th>Arrival</th>
+                    <th>Departure</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Day 1</td>
+                    <td><img src="miami.jpg" alt="Miami, Florida"> Miami, Florida</td>
+                    <td>4:00 AM</td>
+                    <td>8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Day 2</td>
+                    <td><img src="at-sea.jpg" alt="At Sea"> At Sea</td>
+                    <td>4:00 AM</td>
+                    <td>8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Day 3</td>
+                    <td><img src="at-sea.jpg" alt="At Sea"> At Sea</td>
+                    <td>4:00 AM</td>
+                    <td>8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Day 4</td>
+                    <td><img src="philipsburg.jpg" alt="Philipsburg"> Philipsburg, Sint Maarten, Netherlands Antilles</td>
+                    <td>4:00 AM</td>
+                    <td>8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Day 5</td>
+                    <td><img src="st-thomas.jpg" alt="St. Thomas"> St. Thomas, USVI</td>
+                    <td>4:00 AM</td>
+                    <td>8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Day 6</td>
+                    <td><img src="at-sea.jpg" alt="At Sea"> At Sea</td>
+                    <td>4:00 AM</td>
+                    <td>8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Day 7</td>
+                    <td><img src="miami.jpg" alt="Miami, Florida"> Miami, Florida</td>
+                    <td>4:00 AM</td>
+                    <td>8:00 PM</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note"><strong>Please note:</strong> While we do our best to adhere to our published itineraries, they may be changed at the discretion of the captain.</p>
+    </div>
+
+    <!-- Enquiry and Why Book With Us Section -->
+    <div class="sidebar">
+        <div class="enquiry">
+            <textarea placeholder="Write message"></textarea>
+            <div class="agreement">
+                <input type="checkbox" id="agree">
+                <label for="agree">I agree with <a href="#">Terms of Service</a> and <a href="#">Privacy Statement</a></label>
+            </div>
+            <button>Submit Enquiry</button>
+        </div>
+
+        <div class="why-book">
+            <h3>Why Book With Us?</h3>
+            <ul>
+                <li><span class="icon">$</span> No-hassle best price guarantee</li>
+                <li><span class="icon">📞</span> Customer care available 24/7</li>
+                <li><span class="icon">🎉</span> Hand-picked Tours & Activities</li>
+                <li><span class="icon">🌎</span> Free Travel Insurance</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<style>
+    /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+}
+
+.main-containerr {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Cruise Itinerary Section */
+.cruise-itinerary {
+    width: 70%;
+}
+
+.cruise-itinerary h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cruise-itinerary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.cruise-itinerary table th, .cruise-itinerary table td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+.cruise-itinerary table th {
+    background-color: #f3f4f6;
+    font-weight: bold;
+}
+
+.cruise-itinerary table td img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.cruise-itinerary .note {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Sidebar Section */
+.sidebar {
+    width: 28%;
+}
+
+.enquiry {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.enquiry textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    resize: none;
+}
+
+.agreement {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.agreement input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.agreement a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.enquiry button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Why Book With Us Section */
+.why-book {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why-book h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.why-book h3::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #007bff;
+    margin-top: 5px;
+}
+
+.why-book ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-book ul li {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.why-book ul li .icon {
+    font-size: 18px;
+    color: #007bff;
+    margin-right: 8px;
+}
+
+</style>

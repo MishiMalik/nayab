@@ -1,0 +1,272 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Details</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome Icons -->
+</head>
+<body>
+
+<div class="hotel-booking-section">
+    <div class="hotel-details">
+        <h2>Hilton Hotel and Resorts</h2>
+        <p>Boston, MA, USA <span class="rating">4.7</span> <span class="reviews">(4,209 Reviews)</span></p>
+
+        <div class="details-grid">
+            <div class="detail-item">
+                <i class="fas fa-hotel icon"></i>
+                <div>
+                    <p>Hotel Type</p>
+                    <span>4 Star</span>
+                </div>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-money-bill-wave icon"></i>
+                <div>
+                    <p>Security Deposit</p>
+                    <span>$279</span>
+                </div>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-map-marker-alt icon"></i>
+                <div>
+                    <p>Neighborhood</p>
+                    <span>République</span>
+                </div>
+
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-users icon"></i>
+                <div>
+                    <p>Extra People</p>
+                    <span>No Charge</span>
+                </div>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-globe icon"></i>
+                <div>
+                    <p>Country</p>
+                    <span>France</span>
+                </div>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-ban icon"></i>
+                <div>
+                    <p>Cancellation</p>
+                    <span>Strict</span>
+                </div>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-calendar-alt icon"></i>
+                <div>
+                    <p>Minimum Stay</p>
+                    <span>2 Nights</span>
+                </div>
+            </div>
+            <div class="detail-item">
+                <i class="fas fa-city icon"></i>
+                <div>
+                    <p>City</p>
+                    <span>Paris</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+         <label>Check in - Check out</label>
+        <input type="text" placeholder="03/11/2024 - 03/11/2024" class="date-picker">
+
+        <label>Rooms</label>
+        <select>
+            <option>Select Rooms</option>
+        </select>
+
+        <div class="guest-counter">
+            <label>Adults</label>
+            <div class="counter">
+                <button>-</button>
+                <span>0</span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="guest-counter">
+            <label>Children</label>
+            <div class="counter">
+                <button>-</button>
+                <span>0</span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="guest-counter">
+            <label>Infants</label>
+            <div class="counter">
+                <button>-</button>
+                <span>0</span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <button class="book-now">Book Now</button>
+        <button class="wishlist">Add to Wishlist</button>
+    </div>
+</div>
+
+</body>
+</html>
+<style>
+    /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.hotel-booking-section {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.hotel-details {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.hotel-details h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.hotel-details p {
+    font-size: 16px;
+    color: #666;
+}
+
+.rating {
+    background-color: #ffd700;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.reviews {
+    color: #666;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 24px;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.detail-item p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+.detail-item span {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Booking Panel Styling */
+.booking-panel {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.booking-panel label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.date-picker,
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.guest-counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+}
+
+.counter button {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.counter span {
+    width: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.book-now {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.wishlist {
+    width: 100%;
+    padding: 10px;
+    background-color: #f5f7fa;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+</style>

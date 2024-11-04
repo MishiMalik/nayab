@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Section</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<div class="booking-section">
+    <!-- Date Availability Section -->
+    <h3>Date Availability</h3>
+    <table class="availability-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Inside</th>
+                <th>Oceanview</th>
+                <th>Balcony</th>
+                <th>Suite</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="radio" name="date"> April 4 - 11, 2020</td>
+                <td>from $217</td>
+                <td>from $317</td>
+                <td>from $417</td>
+                <td>from $517</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="date"> April 4 - 11, 2020</td>
+                <td>from $299</td>
+                <td>from $399</td>
+                <td>from $499</td>
+                <td>from $599</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="date" checked> April 4 - 11, 2020</td>
+                <td>from $220</td>
+                <td>from $320</td>
+                <td>from $420</td>
+                <td>from $520</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="date"> April 4 - 11, 2020</td>
+                <td>from $238</td>
+                <td>from $338</td>
+                <td>from $438</td>
+                <td>from $538</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="date"> April 4 - 11, 2020</td>
+                <td>from $238</td>
+                <td>from $338</td>
+                <td>from $438</td>
+                <td>from $538</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Select a Cabin Type Section -->
+    <h3>Select a Cabin Type</h3>
+    <div class="cabin-type">
+        <div class="cabin-image">
+            <img src="interior-stateroom.jpg" alt="Interior Stateroom">
+        </div>
+        <div class="cabin-details">
+            <h4>Guarantee - Interior Stateroom</h4>
+            <p><strong>Square footage:</strong> 139-226 sq ft</p>
+            <p><strong>Occupancy:</strong> Up to 2 guests (some sleep up to 4)</p>
+            <p><strong>Amenities:</strong> Double bed that can be converted to two single beds on request, bathrobes, spacious closet, bathroom with shower, interactive TV, mini bar, safe, and telephone.</p>
+            <div class="cabin-price">
+                <span class="discount">Up to 40% off</span>
+                <span class="price">from $217 <del>$299</del></span> per person*
+            </div>
+            <button class="select-button">Select</button>
+        </div>
+    </div>
+
+    <!-- Organizer Section -->
+    <div class="organizer">
+        <h3>Organized by</h3>
+        <div class="organizer-details">
+            <img src="organizer.jpg" alt="Organizer Image">
+            <div class="info">
+                <h4>royaltravelagency</h4>
+                <p>Member Since 2017</p>
+                <p><span class="rating">★★★★☆</span> 305 Reviews</p>
+                <button class="question-button">Ask a Question</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<style>
+    /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.booking-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Date Availability Table */
+.availability-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.availability-table th,
+.availability-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+.availability-table th {
+    background-color: #f3f4f6;
+    font-weight: bold;
+}
+
+.availability-table td input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Cabin Type Section */
+.cabin-type {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.cabin-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cabin-details {
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.cabin-details h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.cabin-details p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.cabin-price {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.cabin-price .discount {
+    background-color: #ffda79;
+    color: #d68500;
+    padding: 3px 6px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.cabin-price .price {
+    font-size: 18px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.cabin-price del {
+    color: #888;
+    margin-left: 5px;
+}
+
+.select-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Organizer Section */
+.organizer {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.organizer h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.organizer-details {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.organizer-details img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.organizer-details .info {
+    flex-grow: 1;
+}
+
+.organizer-details h4 {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.organizer-details p {
+    font-size: 14px;
+    color: #666;
+    margin: 3px 0;
+}
+
+.rating {
+    color: #fbb034;
+}
+
+.question-button {
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+</style>
